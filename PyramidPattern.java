@@ -11,9 +11,17 @@ public class PyramidPattern {
         }
     }
 
-    public static void main(String[] args) {
-        displayReversePyramidPattern(5);
+    public static void displayPyramidPattern(int n) {
+        if (n == 1) {
+            System.out.println("*");
+            return;
+        }
+        int spaces = n;
+        for (int i = 1; i <= n; i++) {
+            System.out.print(" ".repeat(spaces--) + "* ".repeat(i) + "\n");
+        }
     }
+
 }
 
 
