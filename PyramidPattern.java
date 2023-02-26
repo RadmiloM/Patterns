@@ -9,11 +9,10 @@ public class PyramidPattern {
         for (int i = n; i > 0; i--) {
             System.out.print(" ".repeat(index++) + "* ".repeat(i) + "\n");
         }
-        System.out.println();
     }
 
     public static void main(String[] args) {
-        displayReversePyramidPattern(1);
+        displayReversePyramidPattern(5);
     }
 }
 
